@@ -1,0 +1,102 @@
+/*
+Theme Name: TutorStarter Child
+Description: Child theme for TutorStarter
+Author: Your Name
+Author URI: Your Website
+Template: tutorstarter
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: tutorstarter-child
+*/
+
+/* Import parent theme styles */
+@import url("../tutorstarter/style.css");
+
+/* Add your custom styles below */
+
+/* Position navbar-toggler on the far left */
+.navbar .navbar-toggler {
+    order: -1; /* Move to the beginning */
+    margin-right: 15px; /* Add some spacing from the logo */
+}
+
+/* Ensure proper alignment */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Mirror the profile content positioning */
+.navbar-utils {
+    margin-left: auto; /* Push to the right */
+}
+
+/* Reduce navbar left and right padding by 50% */
+.navbar {
+    padding-left: 0.75rem !important; /* Reduced from default 1.5rem */
+    padding-right: 0.75rem !important; /* Reduced from default 1.5rem */
+}
+
+/* Mobile-specific fixes for screens 500px and narrower */
+@media (max-width: 500px) {
+    /* Override mobile navbar spacing */
+    .navbar {
+        padding-left: 0.5rem !important; /* Even tighter on mobile */
+        padding-right: 0.5rem !important; /* Even tighter on mobile */
+        margin-left: 0 !important; /* Remove any mobile margins */
+        margin-right: 0 !important; /* Remove any mobile margins */
+    }
+    
+    /* Target mobile-specific navbar classes */
+    .navbar.navbar-mobile,
+    .navbar.navbar-small,
+    .navbar.navbar-collapsed {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        grid-gap: 0 !important; /* Remove mobile grid gaps */
+        gap: 0 !important; /* Remove mobile gaps */
+    }
+    
+    /* Mobile navbar items spacing */
+    .navbar > * {
+        margin-left: 0.25rem !important; /* Minimal spacing on mobile */
+        margin-right: 0.25rem !important; /* Minimal spacing on mobile */
+    }
+    
+    /* Ensure mobile navbar-toggler positioning */
+    .navbar .navbar-toggler {
+        order: -1 !important;
+        margin-left: 0 !important; /* Remove left margin on mobile */
+        margin-right: 0.5rem !important; /* Minimal right margin */
+    }
+    
+    /* Mobile logo spacing */
+    .navbar-brand {
+        margin-left: 0 !important; /* Remove left margin on mobile */
+        margin-right: 0.5rem !important; /* Minimal right margin */
+    }
+    
+    /* Mobile search field spacing */
+    .search-field {
+        margin-left: 0.25rem !important; /* Minimal left margin */
+        margin-right: 0.25rem !important; /* Minimal right margin */
+    }
+}
+
+/* Style the avatar link and remove dropdown functionality */
+.tutor-avatar-link {
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.tutor-avatar-link:hover {
+    opacity: 0.8;
+}
+
+/* Remove any dropdown-related styling */
+.tutor-header-profile-submenu,
+.tutor-header-submenu {
+    display: none !important;
+}
