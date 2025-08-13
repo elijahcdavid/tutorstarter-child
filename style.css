@@ -15,11 +15,19 @@ Text Domain: tutorstarter-child
 
 /* Add your custom styles below */
 
+/* H2 tag default sizing */
+/* h2 {
+    font-size: 28px !important;
+} */
+
+p {
+    font-size: 16px !important;
+}
 /* Global border padding for desktop and tablet */
 @media (min-width: 768px) {
     .site-content {
-        padding-left: 20px;
-        padding-right: 20px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
     }
 }
 
@@ -329,4 +337,118 @@ Text Domain: tutorstarter-child
         margin: 0 auto !important;
         float: none !important;
     }
+}
+
+/* Elementor Icon Box Styling - Same as Image Box */
+.elementor-icon-box-wrapper {
+    border: 2px solid #7D83FF !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    transition: all 0.3s ease !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Icon box hover effects */
+.elementor-icon-box-wrapper:hover {
+    border-color: #7D83FF !important;
+    box-shadow: 0 8px 25px rgba(125, 131, 255, 0.2) !important;
+    transform: translateY(-5px) !important;
+    background-color: #f8f9ff !important;
+}
+
+.elementor-icon-box-wrapper:hover .elementor-icon-box-title {
+    color: #7D83FF !important;
+}
+
+.elementor-icon-box-wrapper:hover .elementor-icon-box-description {
+    color: #4a5568 !important;
+}
+
+/* Icon box focus and active states */
+.elementor-icon-box-wrapper:focus-within {
+    border-color: #7D83FF !important;
+    box-shadow: 0 0 0 3px rgba(125, 131, 255, 0.1) !important;
+}
+
+.elementor-icon-box-wrapper:active {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(125, 131, 255, 0.15) !important;
+}
+
+/* Icon box icon styling */
+.elementor-icon-box-icon {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-shrink: 0 !important;
+}
+
+.elementor-icon-box-icon .elementor-icon {
+    font-size: 48px !important;
+    color: #7D83FF !important;
+    transition: all 0.3s ease !important;
+}
+
+.elementor-icon-box-wrapper:hover .elementor-icon-box-icon .elementor-icon {
+    transform: scale(1.1) !important;
+    color: #7D83FF !important;
+}
+
+/* Icon box content styling */
+.elementor-icon-box-content {
+    text-align: center !important;
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Widget container styling for icon boxes */
+.elementor-widget-icon-box {
+    height: 100% !important;
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.elementor-widget-icon-box .elementor-widget-container {
+    height: 100% !important;
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Grid layout styling for icon boxes */
+.elementor-row .elementor-column .elementor-widget-icon-box {
+    height: 100% !important;
+    width: 100% !important;
+    flex: 1 !important;
+}
+
+.elementor-row .elementor-column .elementor-widget-icon-box .elementor-icon-box-wrapper {
+    height: 100% !important;
+    min-height: 100% !important;
+}
+
+/* Remove top and bottom padding and margins from tutor-wrap and tutor-courses-wrap */
+.tutor-courses-wrap {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
