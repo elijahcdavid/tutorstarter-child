@@ -506,3 +506,15 @@ p {
 .tutor-course-details-page {
     padding-top: 0 !important;
 }
+
+/* Make the hours/duration section text 16px */
+.tutor-meta .tutor-meta-value,
+.tutor-meta .tutor-meta-level {
+    font-size: 16px !important;
+}
+
+/* Specifically target the duration section under About Course */
+.tutor-course-details-content .tutor-meta .tutor-meta-value,
+.tutor-course-details-content .tutor-meta .tutor-meta-level {
+    font-size: 16px !important;
+}
