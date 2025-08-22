@@ -485,3 +485,24 @@ p {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 }
+
+/* Remove top padding from course page */
+.tutor-course-details-title.tutor-mt-12 {
+    margin-top: 0 !important;
+}
+
+/* Remove top padding from course header */
+.tutor-course-details-header {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Remove top padding from the main course container */
+.tutor-full-width-course-top {
+    padding-top: 0 !important;
+}
+
+/* Remove top margin from course details page */
+.tutor-course-details-page {
+    padding-top: 0 !important;
+}
