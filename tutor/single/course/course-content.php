@@ -48,7 +48,7 @@ if ( tutor_utils()->get_option( 'enable_course_about', true, true ) ) {
 		<?php endif; ?>
 		
 		<div class="tutor-fs-6 tutor-color-secondary">
-			<?php echo apply_filters( 'the_content', $string ); //phpcs:ignore ?>
+			<?php echo wp_kses( $string, array( 'strong' => array(), 'em' => array(), 'br' => array() ) ); ?>
 		</div>
 	</div>
 
