@@ -10,10 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: tutorstarter-child
 */
 
-/* Import parent theme styles */
-@import url("../tutorstarter/style.css");
-
 /* Add your custom styles below */
+
+/* TEST: This should make the body background slightly different to verify CSS is loading */
+body {
+    background-color: #ffffff !important;
+}
 
 /* Header container fix - Add proper spacing to match main content */
 .header-default {
@@ -517,4 +519,15 @@ p {
 .tutor-course-details-content .tutor-meta .tutor-meta-value,
 .tutor-course-details-content .tutor-meta .tutor-meta-level {
     font-size: 16px !important;
+}
+
+/* New tutor-card-header style for course metadata at top of sidebar */
+
+.tutor-card-level-header {
+    background: white !important;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-radius: 5px 5px 0 0;
 }
